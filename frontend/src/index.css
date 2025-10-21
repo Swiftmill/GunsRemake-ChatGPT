@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at 20% 20%, rgba(89, 56, 177, 0.25), transparent 60%),
+    radial-gradient(circle at 80% 0%, rgba(226, 73, 230, 0.2), transparent 55%),
+    #090212;
+  min-height: 100vh;
+}
+
+.glass-card {
+  @apply bg-white/5 border border-white/10 backdrop-blur-xl shadow-glow rounded-3xl;
+}
+
+.badge-pill {
+  @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide bg-white/10;
+}
+
+.link-tile {
+  @apply flex items-center justify-between rounded-2xl px-5 py-4 bg-white/5 hover:bg-white/10 transition-colors border border-white/10;
+}
+
+.admin-section {
+  @apply glass-card p-6 space-y-4;
+}
